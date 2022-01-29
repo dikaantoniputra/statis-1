@@ -1,0 +1,140 @@
+@import "./colors";
+@import "./buttons";
+@import "./fond";
+// import sccs dairi colors
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+.header {
+  font-weight: map-get($font-weights, semibold);
+  color: $navy !important;
+  font-size: 46px;
+  line-height: 60px;
+  margin-top: 100px;
+}
+.description {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 30px;
+  color: $newpur;
+  font-weight: map-get($font-weights, reguler);
+}
+
+.sales {
+  padding-top: 100px;
+  .brand {
+    margin-top: 70px;
+    .brand-logos {
+      width: 724px;
+    }
+  }
+  .copywriting {
+    padding-left: 100px;
+  }
+}
+
+.navbar-tp {
+  padding-top: 30px;
+  .navbar-nav {
+    li {
+      padding-left: 50px;
+    }
+    .active {
+      color: $purple !important;
+      font-weight: map-get($font-weights, medium) !important;
+    }
+    .nav-link {
+      color: $navy;
+      //   font-weight: 400;
+      font-weight: map-get($font-weights, reguler);
+    }
+  }
+}
+
+.pricing {
+  background: $lilpur;
+  padding: 70px 0 70px 0;
+  margin-top: 70px;
+  .master-card {
+    padding: 30px;
+    border-radius: 20px;
+    .btn {
+      width: 100%;
+      margin-top: 20px;
+    }
+    .item-benefit {
+      margin-bottom: 20px;
+      img {
+        // float left membuat gambar ke left
+        float: left;
+        margin-right: 8px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: map-get($font-weights, medium);
+        margin-top: -3px;
+      }
+    }
+    .name {
+      font-size: 18px;
+      font-weight: map-get($font-weights, medium);
+      margin-bottom: 16px;
+    }
+    .price {
+      font-size: 36px;
+      font-weight: map-get($font-weights, semibold);
+      margin-top: 16px;
+      margin-bottom: 20px;
+    }
+    .support {
+      font-size: 16px;
+      font-weight: map-get($font-weights, reguler);
+      margin-bottom: 40px;
+    }
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+  .basic-card {
+    @extend .master-card;
+    background: $white;
+    .name {
+      color: $navy;
+    }
+    .price {
+      color: $navy;
+    }
+    .support {
+      color: $newpur;
+    }
+    .item-benefit {
+      p {
+        color: $navy;
+      }
+    }
+  }
+  .most-card {
+    @extend .master-card;
+    background: $purple;
+    .btn-primary {
+      background: $aqua;
+    }
+    .name {
+      color: $white;
+    }
+    .price {
+      color: $white;
+    }
+    .support {
+      color: $support;
+    }
+    .item-benefit {
+      p {
+        color: $white;
+      }
+    }
+  }
+}

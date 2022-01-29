@@ -1,0 +1,24 @@
+@import "./fond";
+.btn-master {
+  padding: 15px 26px 15px 26px;
+  border-radius: 10px;
+  font-weight: map-get($font-weights, semibold);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: 0;
+}
+
+// ambil css btn master
+.btn-primary {
+  @extend .btn-master;
+  color: $white;
+  background: $purple;
+}
+
+.btn-secondary {
+  @extend .btn-master;
+  color: $darpur;
+  background: $sofpur;
+}
